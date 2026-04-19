@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My DevOps Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mahmut Sedat Dolunay</h1>
+        <p>Research Assistant</p>
+    </header>
+
+    <section class="bio">
+        <h2>About Me</h2>
+        <p>
+            I am interested in Information Systems, especially how automation and DevOps
+            can improve software development. I enjoy learning how systems work together
+            and how to make processes more efficient.
+        </p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>Git & GitHub</li>
+            <li>Basic DevOps Concepts</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Last Deployment: <span id="date"></span></p>
+    </footer>
+
+    <script>
+        const date = new Date();
+        document.getElementById("date").textContent = date.toLocaleDateString();
+    </script>
+
+</body>
+</html>
