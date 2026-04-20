@@ -35,10 +35,18 @@
         <p>Last Deployment: <span id="date"></span></p>
     </footer>
 
-    <script>
-        const date = new Date();
-        document.getElementById("date").textContent = date.toLocaleDateString();
-    </script>
+     <script>
+    const date = new Date();
+    
+    const options = { 
+        year: 'numeric', 
+        month: 'numeric', 
+        day: 'numeric', 
+        hour: '2-digit', 
+        minute: '2-digit' 
+    };
+    document.getElementById("date").textContent = date.toLocaleString(undefined, options);
+</script>
 
 </body>
 </html>
